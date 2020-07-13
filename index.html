@@ -3,9 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max:768px)"
+      href="css/mobile.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Staatliches&display=swap"
+      rel="stylesheet"
+    />
     <title>News Website | Main Page</title>
   </head>
   <body>
-    <nav></nav>
+    <nav id="main-nav">
+      <div class="container">
+        <a href="index.html"
+          ><img src="/img/logo.png" alt="News Website" class="logo"
+        /></a>
+        <ul>
+          <li><a href="index.html" class="current">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main article -->
+    <header id="showcase">
+      <div class="container">
+        <div class="showcase-container">
+          <div class="showcase-content">
+            <div class="category category-sport">Sport</div>
+            <h1>Romario: We made a downtrodden nation ecstatic</h1>
+            <p>
+              “No, I won’t recall Romario,” snapped Carlos Alberto Parreira. And
+              he didn’t, despite Brazil facing nemesis Uruguay in a win-or-bust
+              USA 1994 qualifier. Then Brazil’s injury crisis heightened, the
+              racket for Romario’s recall erupted like never before, and
+              Parreira relented not only by handing the Barcelona striker an
+              11th-hour call-up, but by installing him in his starting XI.
+            </p>
+            <a href="article.html" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+    </header>
   </body>
 </html>
