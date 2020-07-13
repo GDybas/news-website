@@ -1,6 +1,6 @@
 :root {
   --primary-color: #93CB52;
-  --secondary-color: #f99500;
+  --secondary-color: #bababa;
   --light-color: #f3f3f3;
   --dark-color: #333;
   --max-width: 1100px;
@@ -21,7 +21,7 @@
 }
 
 body {
-  background: var(--light-color);
+  background: var(--secondary-color);
   font-family: 'Lato', sans-serif;
   line-height: 1.5;
 }
@@ -134,10 +134,42 @@ ul {
   background: var(--tech-color);
 }
 
-/* NavBar */
+
+
+.card {
+  background: var(--light-color);
+  padding: 1rem;
+}
+
+
+.bg-dark {
+  background: var(--dark-color);
+  color: #fff;
+}
+
+.bg-light {
+  background: var(--light-color);
+  color: #333;
+}
+
+.bg-primary {
+  background: var(--primary-color);
+  color: #333;
+}
+
+.bg-secondary {
+  background: var(--secondary-color);
+}
+
+
+.bg-primary a {
+  color: #333;
+}
+
+/* ----------------NavBar--------------------- */
 #main-nav {
   background: #333;
-  z-index: 1;
+  z-index: 2;
   position: sticky;
   top: 0;
 }
@@ -177,22 +209,9 @@ ul {
   transition: 0.3s;
 }
 
-/* Footer */
-.footer .social {
-  justify-self: center;
-}
 
-.footer .social i {
-  color: #777;
-  margin-right: .5rem;
-  transition: color 0.2s ease;
-}
 
-.footer .social i:hover {
-  color: var(--primary-color);
-}
-
-/* Main article */
+/* --------------------Main article-------------------- */
 
 #showcase {
   color: #fff;
@@ -209,7 +228,7 @@ ul {
   width: 100%;
   height: 100%;
   opacity: 0.4;
-  background: url(../img/soccer-main-article.jpg) no-repeat center center/cover;
+  background: url(../img/articles/soccer-main-article.jpg) no-repeat center center/cover;
 }
 
 #showcase .showcase-container {
@@ -226,4 +245,39 @@ ul {
 
 #showcase .showcase-content p {
   margin-bottom: 1rem;
+}
+
+/* ----------------News section---------------- */
+#news .articles-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+#news .articles-container>*:first-child,
+#news .articles-container>*:last-child {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  align-items: center;
+  grid-column: 1 / span 2;
+}
+
+#news .articles-container>*:last-child {
+  grid-column: 2 / span 2;
+}
+
+/* ----------------Footer--------------------- */
+.footer .social {
+  justify-self: center;
+}
+
+.footer .social i {
+  color: #777;
+  margin-right: .5rem;
+  transition: color 0.2s ease;
+}
+
+.footer .social i:hover {
+  color: var(--primary-color);
 }
