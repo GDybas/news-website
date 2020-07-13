@@ -108,6 +108,14 @@ ul {
   background: var(--secondary-color)
 }
 
+.btn-block {
+  display: block;
+  text-align: center;
+  width: 100%;
+  background: var(--dark-color);
+  color: var(--light-color) !important;
+}
+
 .btn:hover {
   opacity: 0.9;
 }
@@ -182,6 +190,10 @@ ul {
   color: var(--primary-color) !important;
 }
 
+.b-heading {
+  font-size: 3rem;
+}
+
 /* ----------------NavBar--------------------- */
 #main-nav {
   background: #333;
@@ -224,7 +236,6 @@ ul {
   background: var(--primary-color);
   transition: 0.3s;
 }
-
 
 
 /* --------------------Main article-------------------- */
@@ -281,6 +292,19 @@ ul {
 
 #news .articles-container>*:last-child {
   grid-column: 2 / span 2;
+}
+
+/* About page styling */
+
+.page-container {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  margin: 2rem 0;
+  grid-gap: 1.5rem;
+}
+
+.page-container>*:first-child {
+  grid-row: 1/ span 3;
 }
 
 /* ----------------Footer--------------------- */
