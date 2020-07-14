@@ -21,7 +21,7 @@
 }
 
 body {
-  background: var(--secondary-color);
+  background: var(--light-color);
   font-family: 'Lato', sans-serif;
   line-height: 1.5;
 }
@@ -294,7 +294,43 @@ ul {
   grid-column: 2 / span 2;
 }
 
-/* About page styling */
+/* ---------------Editors Section -------------------- */
+
+#editors-section {
+  background: var(--secondary-color);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#editors-section .editors>* {
+  display: flex;
+}
+
+#editors-section .editors ul {
+  list-style: none;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#editors-section .editors p {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+#editors-section .editors img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+
+}
+
+/* ---------------About page styling --------------*/
 
 .page-container {
   display: grid;
