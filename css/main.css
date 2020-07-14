@@ -317,9 +317,11 @@ ul {
 }
 
 #editors-section .editors p {
-  border: 1px solid #fff;
+  border: 1px solid #333;
   border-radius: 5px;
   padding: 0.5rem;
+  text-align: justify;
+  padding: 1rem 1rem;
 }
 
 #editors-section .editors img {
@@ -327,6 +329,7 @@ ul {
   height: 100px;
   border-radius: 50%;
   margin-right: 0.5rem;
+  border: 1px solid #333;
 
 }
 
