@@ -14,7 +14,7 @@
       rel="stylesheet"
     />
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
-    <title>News Website | About</title>
+    <title>News Website | Contact</title>
   </head>
   <body>
     <nav id="main-nav">
@@ -24,55 +24,58 @@
         /></a>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html" class="current">About</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="current">Contact Us</a></li>
         </ul>
       </div>
     </nav>
 
-    <section id="about">
+    <section id="contact">
       <div class="container">
-        <div class="page-container">
-          <article class="card">
-            <h1 class="b-heading">Everything about our group</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
-              distinctio. Eum, accusamus sapiente laboriosam suscipit alias, eos
-              asperiores quam veniam reiciendis tempore illum cupiditate!
-              Accusantium inventore saepe, molestiae iusto distinctio possimus,
-              sunt culpa tempore similique quibusdam deleniti quas excepturi,
-              sequi dolorem quis nostrum ullam laborum tempora aliquam nisi
-              officiis consequuntur.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam,
-              enim nesciunt eius itaque consequuntur quis impedit delectus
-              tempora excepturi placeat nam sit deleniti autem nulla quam
-              eligendi molestias rerum, ad velit repellendus totam perferendis
-              ducimus nihil voluptatum. Id nulla voluptas minima vitae vero
-              adipisci optio autem explicabo rem, magni placeat obcaecati sequi?
-              Tempore excepturi perferendis voluptatibus error similique eaque
-              minus voluptate? Eveniet dolorem recusandae quae necessitatibus ab
-              vel asperiores esse ut at neque repellat corrupti voluptatum
-              blanditiis maxime, sed perferendis dicta quisquam, consequuntur
-              iusto, inventore aperiam reprehenderit suscipit! Sit inventore
-              officia veritatis alias veniam dolores dolorem! Deleniti minus
-              alias eveniet ipsa eaque sequi dicta mollitia quos quasi aperiam
-              itaque architecto libero, aliquam, dolorem voluptates, voluptas
-              praesentium tenetur! Obcaecati deleniti ex natus, odio vel commodi
-              perspiciatis rem architecto quasi itaque debitis inventore,
-              dolores nostrum rerum cum. Iusto mollitia suscipit magnam magni
-              earum sed aut in consequuntur similique atque, ex rem accusantium.
-            </p>
-          </article>
-          <aside class="card bg-primary">
-            <h2>Join Our Club</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio,
-              aperiam!
-            </p>
-            <a href="#" class="btn btn-block">Join Us</a>
-          </aside>
+        <div class="contact-form p-3">
+          <h2 class="m-heading">Contact Us</h2>
+          <p>
+            If you have some interesting facts or you just want to contact with
+            us for any other reason, just feel free to use form below.
+          </p>
+          <form action="">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter Name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter Email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input
+                type="text"
+                name="phone"
+                id="phone"
+                placeholder="Enter Phone Number"
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Enter Message"
+              ></textarea>
+            </div>
+            <input type="submit" value="Send" class="btn btn-dark" />
+          </form>
         </div>
       </div>
     </section>

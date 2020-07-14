@@ -108,6 +108,11 @@ ul {
   background: var(--secondary-color)
 }
 
+.btn-dark {
+  background: var(--dark-color);
+  color: var(--light-color);
+}
+
 .btn-block {
   display: block;
   text-align: center;
@@ -192,6 +197,10 @@ ul {
 
 .b-heading {
   font-size: 3rem;
+}
+
+.m-heading {
+  font-size: 2rem;
 }
 
 /* ----------------NavBar--------------------- */
@@ -333,7 +342,7 @@ ul {
 
 }
 
-/* ---------------About page styling --------------*/
+/* ---------------About Page Styling --------------*/
 
 .page-container {
   display: grid;
@@ -346,7 +355,40 @@ ul {
   grid-row: 1/ span 3;
 }
 
-/* ----------------Footer--------------------- */
+/* --------------Contact Page Styling -------------*/
+
+#contact {
+  background: var(--primary-color);
+}
+
+#contact .contact-form {
+  height: 60vh;
+
+}
+
+#contact .contact-form .form-group {
+  margin: 0.75rem;
+}
+
+#contact .contact-form label {
+  display: block;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+#contact .contact-form input[type='submit'] {
+  width: 70%;
+  padding: 1rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* -----------------Footer------------------------- */
 
 #main-footer {
   background: var(--dark-color);
